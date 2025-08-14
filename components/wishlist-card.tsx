@@ -71,15 +71,15 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
             </Badge>
           </div>
 
+          {item.description && (
+            <p className="text-sm text-muted-foreground line-clamp-3">{item.description}</p>
+          )}
+
           {/* Show contribution info only for contributable gifts */}
           {item.type !== "checkable" && typeof item.amount_contributed === "number" && (
             <p className="text-sm text-foreground">
-              Bijgedragen: <strong>€{item.amount_contributed.toFixed(2)}</strong>
+              Reeds bijgedragen: <strong>€{item.amount_contributed.toFixed(2)}</strong>
             </p>
-          )}
-
-          {item.description && (
-            <p className="text-sm text-muted-foreground line-clamp-3">{item.description}</p>
           )}
         </div>
 
@@ -103,7 +103,7 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
             ) : item.type === "checkable" ? (
               <>
                 <Mail className="h-4 w-4 mr-2" />
-                Dit cadeau afstrepen (stuurt een mailtje)
+                Dit cadeau afstrepen <br />(stuurt een mailtje)
               </>
             ) : (
               <>
