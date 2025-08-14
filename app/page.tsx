@@ -97,9 +97,8 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex flex-col items-center justify-center gap-3 mb-4">
             <Gift className="h-8 w-8 text-primary" />
-            <br>
             <h1 className="text-4xl font-bold">Onze verlanglijst</h1>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
