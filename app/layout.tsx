@@ -5,7 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "My Wishlist",
+  title: "Verlanglijst van Beatrix en Niek",
   description: "A simple public wishlist for gifts and contributions",
   generator: "v0.app",
 }
