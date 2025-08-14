@@ -67,7 +67,7 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
           <div className="flex items-start justify-between gap-2">
             <h3 className="font-semibold text-lg leading-tight">{item.name}</h3>
             <Badge variant={item.type === "checkable" ? "default" : "secondary"}>
-              {item.type === "checkable" ? "Check Off" : "Contribute"}
+              {item.type === "checkable" ? "Afstreepbaar" : "Bijdrage"}
             </Badge>
           </div>
 
@@ -79,7 +79,7 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
         {item.checked ? (
           <div className="w-full flex items-center justify-center gap-2 text-green-600">
             <Check className="h-4 w-4" />
-            <span className="text-sm font-medium">Already claimed!</span>
+            <span className="text-sm font-medium">Deze is al afgestreept!</span>
           </div>
         ) : (
           <Button
@@ -93,12 +93,12 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
             ) : item.type === "checkable" ? (
               <>
                 <Mail className="h-4 w-4 mr-2" />
-                Check Off This Gift
+                Dit cadeau afstrepen (stuurt een mailtje naar de ceremoniemeesters)
               </>
             ) : (
               <>
                 <Heart className="h-4 w-4 mr-2" />
-                Contribute to This Gift
+                Bijdragen aan dit cadeau
               </>
             )}
           </Button>
