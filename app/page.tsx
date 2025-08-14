@@ -54,7 +54,7 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <Gift className="h-8 w-8 animate-pulse mx-auto mb-4 text-primary" />
-          <p className="text-muted-foreground">Loading wishlist...</p>
+          <p className="text-muted-foreground">Verlanglijst aan het laden...</p>
         </div>
       </div>
     )
@@ -99,11 +99,10 @@ export default function Home() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Gift className="h-8 w-8 text-primary" />
-            <h1 className="text-4xl font-bold">My Wishlist</h1>
+            <h1 className="text-4xl font-bold">Onze verlanglijst</h1>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Welcome to my wishlist! You can either check off items you'd like to get me, or contribute to bigger gifts.
-            Thank you for your thoughtfulness! 💝
+            Hoi, wat leuk dat je ons een cadeau wil geven! We hebben een paar ideeën. Je kunt er één afstrepen, of bijdragen aan een groter cadeau. Heel erg bedankt en tot binnenkort!
           </p>
         </div>
 
