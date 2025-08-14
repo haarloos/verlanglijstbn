@@ -99,6 +99,7 @@ export default function Home() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Gift className="h-8 w-8 text-primary" />
+            <br>
             <h1 className="text-4xl font-bold">Onze verlanglijst</h1>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
