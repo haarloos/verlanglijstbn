@@ -103,7 +103,7 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
             ) : item.type === "checkable" ? (
               <>
                 <Mail className="h-4 w-4 mr-2" />
-                Dit cadeau afstrepen <br />(stuurt een mailtje)
+                Dit cadeau afstrepen (mail)
               </>
             ) : (
               <>
