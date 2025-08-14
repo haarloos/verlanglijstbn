@@ -45,9 +45,12 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
   }
 
   const handleContribute = () => {
-    // In a real app, this would open a payment link
-    alert(`Contribution link for "${item.name}" would open here. You can add your payment processor link.`)
-  }
+    if (item.betaallink) {
+      window.open(item.betaallink, '_blank'); // opens the link in a new tab
+    } else {
+      alert('No payment link available for this item.');
+    }
+  };
 
   return (
     <Card className="h-full flex flex-col">
