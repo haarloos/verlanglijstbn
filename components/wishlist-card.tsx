@@ -32,9 +32,9 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
       if (error) throw error
 
       // Simple email notification (in a real app, you'd use a proper email service)
-      const subject = `Gift Checked Off: ${item.name}`
-      const body = `Someone has checked off "${item.name}" from your wishlist!`
-      window.open(`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
+      const subject = `Cadeau afgestreept: ${item.name}`
+      const body = `Beste ceremoniemeesters, ik heb "${item.name}" van de verlanglijst van Niek en Beatrix afgestreept!`
+      window.open(`mailto:niekenbeatrixgaantrouwen@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
 
       onUpdate()
     } catch (error) {
