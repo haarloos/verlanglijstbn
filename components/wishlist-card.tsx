@@ -71,8 +71,18 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
             </Badge>
           </div>
 
-          {item.description && <p className="text-sm text-muted-foreground line-clamp-3">{item.description}</p>}
+          {/* Show contribution info only for contributable gifts */}
+          {item.type !== "checkable" && typeof item.amount_contributed === "number" && (
+            <p className="text-sm text-foreground">
+              Bijgedragen: <strong>€{item.amount_contributed.toFixed(2)}</strong>
+            </p>
+          )}
+
+          {item.description && (
+            <p className="text-sm text-muted-foreground line-clamp-3">{item.description}</p>
+          )}
         </div>
+
       </CardContent>
 
       <CardFooter className="p-4 pt-0">
