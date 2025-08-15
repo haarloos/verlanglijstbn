@@ -111,7 +111,18 @@ export default function Home() {
             </p>
           <Button
             onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
-            className="w-fit whitespace-nowrap shrink-0 mt-4"
+            className="w-fit whitespace-nowrap shrink-0 mt-2"
+            variant="default"
+          >
+              <Mail className="h-4 w-4 mr-2" />
+              Stuur ons een mailtje
+          </Button>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
+            Mocht je vragen hebben:
+            </p>
+          <Button
+            onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
+            className="w-fit whitespace-nowrap shrink-0 mt-3"
             variant="default"
           >
               <Mail className="h-4 w-4 mr-2" />
