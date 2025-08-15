@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase/client"
 import WishlistCard from "@/components/wishlist-card"
 import { Gift, Database } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 interface WishlistItem {
   id: number
