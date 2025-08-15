@@ -106,8 +106,8 @@ export default function Home() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Hoi, wat leuk dat je ons een cadeau wil geven! We hebben een paar ideeën. Je kunt er één afstrepen, of bijdragen aan een groter cadeau. Heel erg bedankt en tot binnenkort!
           </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4">
-            Mocht je vragen hebben: </br>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Mocht je vragen hebben:
             </p>
           <Button
             onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
