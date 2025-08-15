@@ -104,6 +104,15 @@ export default function Home() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Hoi, wat leuk dat je ons een cadeau wil geven! We hebben een paar ideeën. Je kunt er één afstrepen, of bijdragen aan een groter cadeau. Heel erg bedankt en tot binnenkort!
           </p>
+          <Button
+            onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
+            disabled={isLoading}
+            className="w-full"
+            variant="default"
+          >
+              <Mail className="h-4 w-4 mr-2" />
+              Dit cadeau afstrepen (mail)
+          </Button>
         </div>
 
         {items.length === 0 ? (
