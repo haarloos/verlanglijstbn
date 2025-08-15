@@ -106,12 +106,12 @@ export default function Home() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Hoi, wat leuk dat je ons een cadeau wil geven! We hebben een paar ideeën. Je kunt er één afstrepen, of bijdragen aan een groter cadeau. Heel erg bedankt en tot binnenkort!
           </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
             Mocht je vragen hebben:
             </p>
           <Button
             onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
-            className="w-fit whitespace-nowrap shrink-0"
+            className="w-fit whitespace-nowrap shrink-0 mt-4"
             variant="default"
           >
               <Mail className="h-4 w-4 mr-2" />
