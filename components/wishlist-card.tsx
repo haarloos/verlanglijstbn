@@ -65,7 +65,7 @@ export default function WishlistCard({ item, onUpdate }: WishlistCardProps) {
 
         <div className="space-y-2">
           <div className="flex items-start justify-between gap-2">
-            <h3 className="font-semibold text-lg leading-tight">{item.name}</h3>
+            <h3 className="font-semibold text-primary leading-tight">{item.name}</h3>
             <Badge variant={item.type === "checkable" ? "default" : "secondary"}>
               {item.type === "checkable" ? "Afstreepbaar" : "Bijdrage"}
             </Badge>
