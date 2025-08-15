@@ -5,6 +5,7 @@ import { supabase } from "@/lib/supabase/client"
 import WishlistCard from "@/components/wishlist-card"
 import { Gift, Database } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Mail } from "lucide-react"
 
 interface WishlistItem {
   id: number
