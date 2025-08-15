@@ -120,7 +120,7 @@
 
   body {
     @apply text-foreground;
-    background-image: url('public/images/backgroundimage.png');
+    background-image: url('../public/images/backgroundimage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
