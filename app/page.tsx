@@ -107,7 +107,6 @@ export default function Home() {
           </p>
           <Button
             onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
-            disabled={isLoading}
             className="w-full"
             variant="default"
           >
