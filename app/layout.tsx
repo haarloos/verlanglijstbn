@@ -6,7 +6,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Verlanglijst van Beatrix en Niek",
-  description: "A simple public wishlist for gifts and contributions",
+  description: "Een verlanglijst van cadeau's en bijdrages",
   generator: "v0.app",
 }
 
