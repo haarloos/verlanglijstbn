@@ -107,7 +107,7 @@ export default function Home() {
             Hoi, wat leuk dat je ons een cadeau wil geven! We hebben een paar ideeën. Je kunt er één afstrepen, of bijdragen aan een groter cadeau. Heel erg bedankt en tot binnenkort!
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
-            Mocht je vragen hebben:
+            Mocht je vragen hebben, of per ongeluk iets onterecht hebben afgestreept:
             </p>
           <Button
             onClick={() => window.location.href = "mailto:niekenbeatrixgaantrouwen@gmail.com?subject=Vraag verlanglijst"}
